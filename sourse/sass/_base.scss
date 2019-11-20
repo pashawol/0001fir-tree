@@ -17,7 +17,11 @@ html {
 }  
 body,
 html {
-	font-size: $em-base;
+	@include media-breakpoint-up(md) {
+
+		font-size: $em-base;
+	}
+	font-size: 18px;
 	// @include font-size(1rem);
 } 
 .section { 
@@ -27,12 +31,18 @@ html {
 }
 
 .section-title {
-	@extend .h2;
-	padding-bottom: em(10); 
+	@extend .h2; 
 	>h2 {
-		font-size: inherit;
+		font-family: "Rupster Script Free";
+		// font-size: 83px;
+		@include rfs(rem(83 /2));
+		font-weight: 400;
+		line-height: 1.87;
 		
 		@include media-breakpoint-up(md) {}
+	}
+	p{
+		font-size: 1rem;
 	}
 }
 
@@ -448,4 +458,9 @@ a{
 	z-index: 2;
 }
 
-// .pagination-wrapper li
+.btn-primary,
+.btn-outline-primary{
+	@extend .btn;
+	text-transform: uppercase;
+	font-size: rem(22);
+}

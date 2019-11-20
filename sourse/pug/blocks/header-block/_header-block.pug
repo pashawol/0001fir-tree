@@ -2,6 +2,29 @@ mixin header-block()
 	// start header-block
 	+b.header-block#header-block
 		.container
-			h1 header-block
+			+e.logo
+				img.res-i(src="img/@1x/logo-head.png", alt="")
+			h1 Елки оптом
+			img.res-i(src="img/@1x/text-price.png", alt="")
+			p Без наших красавиц не обходится ни один новый год!
+			+e.icons-block
+				mixin item(i,t,p)
+					+e.col.col-lg-auto.col-6
+						img.res-i(src=`img/@1x/head-i-${i}.png`, alt="")
+						+e.title= t
+						+e.text= p
 			.row
+				+item('1','Лучшая цена','по рынку в Москве')
+				+item('2','Всегда','на складе в наличии') 
+				+item('3','100% контроль','качества вручную')
+				+item('4','Работаем','с 1996 г.')
+				+e.col-center.col
+					+form-wrap
+						+input('','tel')
+						button.btn-primary(type="submit") Получить прайс
+			+e.text-foot Мы&nbsp;самостоятельно выращиваем деревья: не&nbsp;рубим лесную елку.
+				br
+				| Наши деревья растут в&nbsp;питомнике, где им&nbsp;достаточно места и&nbsp;света для идеального роста.
+			.video-block
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/H8yV1qxqgiU"   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	// end header-block

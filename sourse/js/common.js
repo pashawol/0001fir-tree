@@ -30,55 +30,7 @@ const JSCCommon = {
 			$.fancybox.close();
 		})
 	},
-	// /magnificPopupCall
-	toggleMenu() {
-		let  _this = this;
-		_this.btnToggleMenuMobile.forEach(function (element) {
-			element.addEventListener('click', function() {
-
-				_this.btnToggleMenuMobile.forEach(function (element) {
-					element.classList.toggle("on");
-				});
-				_this.menuMobile.classList.toggle("active");
-				_this.body.classList.toggle("fixed");
-				
-				return false;
-			});
-		});
-	},
-
-	closeMenu() {
-		let  _this = this;
-		_this.btnToggleMenuMobile.forEach(function (element) {
-			element.classList.remove("on");
-			
-		});
-		_this.menuMobile.classList.remove("active");
-		_this.body.classList.remove("fixed");
-		
-	},
-
-	mobileMenu() {
-		// закрыть/открыть мобильное меню
-		let  _this = this;
-
-		_this.toggleMenu();
-		_this.menuMobileLink.forEach(function (element)  {
-			element.addEventListener('click',  function (e) {
-				console.log(element);
-				_this.closeMenu(); 
-				
-			});
-		})
-		document.addEventListener('mouseup', function (event)   {
-			let container = event.target.closest(".menu-mobile--js.active"); // (1)
-			if (!container) {
-				_this.closeMenu(); 
-				
-			}
-		});
-	},
-	// /mobileMenu
+ 
 
 	// табы  . 
 	tabscostume(tab) {
@@ -86,7 +38,7 @@ const JSCCommon = {
 			$(this)
 				.addClass('active').siblings().removeClass('active')
 				.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
-				.eq($(this).index()).fadeIn().addClass('active');
+				.eq($(this).index()).show().addClass('active');
 
 		});
 	},
@@ -109,9 +61,7 @@ function eventHandler() {
 
 	JSCCommon.modalCall();
 
-	JSCCommon.tabscostume('tabs');
-
-	JSCCommon.mobileMenu();
+	JSCCommon.tabscostume('tabs'); 
 
 	JSCCommon.inputMask();
 
@@ -158,9 +108,7 @@ function eventHandler() {
 			}
 		});
 		// конец добавил
-		if (window.matchMedia("(min-width: 992px)").matches) {
-			JSCCommon.closeMenu();
-		}
+	 
 	}
 
 	$(window).resize(function() {

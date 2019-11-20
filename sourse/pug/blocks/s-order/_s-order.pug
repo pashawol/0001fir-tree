@@ -1,0 +1,15 @@
+mixin s-order()
+	// start s-order
+	+b.SECTION.s-order.section.text-center#s-order&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Оформить заказ просто
+			img.res-i.lazy(src="#" data-src="img/@1x/order-img.png", alt="")
+			.row
+				+e.col.col-lg-4: +e.item Вы&nbsp;звоните&nbsp;
+					a(href="tel:8(926)374-38-32") 8 (926) 374-38-32 
+					| 
+					| или оставляете заявку и&nbsp;мы перезвоним
+				+e.col.col-lg-4: +e.item Высылаем прайс, договор, счет. При необходимости можно лично выбрать товар на складе.
+				+e.col.col-lg-4: +e.item Оплачиваете товар и&nbsp;забираете его на&nbsp;нашем складе.
+	// end s-order

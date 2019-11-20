@@ -3,6 +3,18 @@ extends layout/main.pug
 
 include ../blocks/s-content/_s-content.pug
 include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-video/_s-video.pug
+include ../blocks/s-production/_s-production.pug
+include ../blocks/s-store/_s-store.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/s-podstavka/_s-podstavka.pug
+include ../blocks/s-tonnel/_s-tonnel.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-warning/_s-warning.pug
+include ../blocks/s-opt/_s-opt.pug
+include ../blocks/s-order/_s-order.pug
+include ../blocks/s-rew/_s-rew.pug
+include ../blocks/s-sert/_s-sert.pug
 
 block variables
 	- let  mainPage= null
@@ -10,11 +22,18 @@ block title
 	- let  title= 'title'
 	title= title
 block pagecontent 
-	+mob-mnu()
-	+header()
-		+top-line()
-		+top-nav()
+	//- +mob-mnu()
 	+header-block()
-	+s-form()
+	+s-production
+	+s-store
+	+s-catalog
+	+s-podstavka
+	+s-tonnel
+	+s-about
+	+s-warning
+	+s-opt
+	+s-order
+	+s-rew
 	+s-contact()
-	+footer()
+		+s-sert
+	//- +footer()

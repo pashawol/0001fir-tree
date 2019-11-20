@@ -37,62 +37,10 @@ var JSCCommon = {
 			$.fancybox.close();
 		});
 	},
-	// /magnificPopupCall
-	toggleMenu: function toggleMenu() {
-		var _this = this;
-
-		_this.btnToggleMenuMobile.forEach(function (element) {
-			element.addEventListener('click', function () {
-				_this.btnToggleMenuMobile.forEach(function (element) {
-					element.classList.toggle("on");
-				});
-
-				_this.menuMobile.classList.toggle("active");
-
-				_this.body.classList.toggle("fixed");
-
-				return false;
-			});
-		});
-	},
-	closeMenu: function closeMenu() {
-		var _this = this;
-
-		_this.btnToggleMenuMobile.forEach(function (element) {
-			element.classList.remove("on");
-		});
-
-		_this.menuMobile.classList.remove("active");
-
-		_this.body.classList.remove("fixed");
-	},
-	mobileMenu: function mobileMenu() {
-		// закрыть/открыть мобильное меню
-		var _this = this;
-
-		_this.toggleMenu();
-
-		_this.menuMobileLink.forEach(function (element) {
-			element.addEventListener('click', function (e) {
-				console.log(element);
-
-				_this.closeMenu();
-			});
-		});
-
-		document.addEventListener('mouseup', function (event) {
-			var container = event.target.closest(".menu-mobile--js.active"); // (1)
-
-			if (!container) {
-				_this.closeMenu();
-			}
-		});
-	},
-	// /mobileMenu
 	// табы  . 
 	tabscostume: function tabscostume(tab) {
 		$('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
-			$(this).addClass('active').siblings().removeClass('active').closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active').eq($(this).index()).fadeIn().addClass('active');
+			$(this).addClass('active').siblings().removeClass('active').closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active').eq($(this).index()).show().addClass('active');
 		});
 	},
 	// /табы  
@@ -112,7 +60,6 @@ function eventHandler() {
 	svg4everybody({});
 	JSCCommon.modalCall();
 	JSCCommon.tabscostume('tabs');
-	JSCCommon.mobileMenu();
 	JSCCommon.inputMask(); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
 
@@ -144,10 +91,6 @@ function eventHandler() {
 				$('.top-nav  ').removeClass('fixed');
 			}
 		}); // конец добавил
-
-		if (window.matchMedia("(min-width: 992px)").matches) {
-			JSCCommon.closeMenu();
-		}
 	}
 
 	$(window).resize(function () {

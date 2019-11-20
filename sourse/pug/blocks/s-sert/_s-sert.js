@@ -1,0 +1,5 @@
+JSCCommons-sert();
+	s-sert() {
+
+	}
+	

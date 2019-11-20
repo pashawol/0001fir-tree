@@ -1,0 +1,23 @@
+mixin s-warning()
+	// start s-warning
+	+b.SECTION.s-warning.section#s-warning&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Внимание!
+				p С 01.12.19 будет произведена переиндексация цен с соответствующим сезонным подорожанием.
+			.row
+				.col-lg-5.text-center
+					+e.block
+						p При оформлении
+							br
+							| заказа до 30.11.19, Вы гарантировано получаете эксклюзивную цену на
+						p
+							strong -10%
+						p ниже рыночной!
+					a.btn-primary(href="#") Получить прайс
+				+e.right-block.col
+					p Новогодний бизнес – это всегда сверхприбыль! При оформлении заказа Вы получаете эксклюзивное краткое руководство по увеличению розничных продаж! 
+					+e.img-wrap
+						img.res-i.lazy(src="#" data-src="img/@1x/warning-img.png", alt="")
+						.small-text *Расчет произведен на основе среднестатистической цены на аналогичную продукцию продаваемую оптом из утвержденного списка конкурентов по Москве и МО.
+	// end s-warning

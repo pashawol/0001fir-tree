@@ -1,0 +1,35 @@
+mixin s-catalog()
+	// start s-catalog
+	+b.SECTION.s-catalog.section.text-center#s-catalog&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Хвойные деревья на любой вкус
+				p от малютки до городской елки
+			.row
+				mixin item(i,t)
+					+e.col.col-lg-4.col-sm-6
+						+e.item 
+							+e.img-wrap
+								+e.title= t
+								img.res-i.lazy(src="#" data-src=`img/@1x/prod-${i}.png`, alt="") 
+							p Узнайте о ценах по телефону:
+								br
+								a(href="tel:8(495)740-83-71") 8 (495) 740-83-71
+								br
+								a(href="tel:8(925)154-55-43") 8 (925) 154-55-43
+								br
+								| или оставьте заявку 
+							a.btn-primary(href="#")  УЗНАТЬ ЦЕНУ
+					// /+e.col.col-lg-4.col-sm-6
+				+item("1","Ель Датская")
+				+item("2","Пихта Фрейзера")
+				+item("3","Ель Русская")
+				+item("4","Сосна")
+				+item("5","Ель голубая в горшке")
+				+item("6","Ель Русская в горшке")
+				+item("7","Канадская сосна")
+				+item("8","Ель датская в горшке")
+				+item("9","Ель норвежская")
+				+item("10","Пихта Фразера в горшке")
+				+item("11","Ель голубая срезанная")
+	// end s-catalog

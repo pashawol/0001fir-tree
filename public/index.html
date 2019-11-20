@@ -27,106 +27,577 @@
 <script>!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);</script>
 <!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
-			<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-			</div>
-			<div class="menu-mobile menu-mobile--js d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-				</div>
-				<div class="menu-mobile__inner">
-					<ul class="menu-mobile__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="/" itemprop="url">Главная</a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Услуги  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Подбор септика   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Контакты </a>
-						</li>
-					</ul>
-					<div class="text-right"></div>
-				</div>
-			</div>
-			<!--  мобильное меню-->
-			<!-- start HEADER.header-->
-			<header class="header block-with-lazy">
-				<!-- start .top-line-->
-				<div class="top-line block-with-lazy">
-					<div class="container">
-						<div class="row">top-line</div>
-					</div>
-				</div>
-				<!-- end .top-line-->
-				<!-- start top-nav-->
-				<div class="top-nav block-with-lazy">
-					<div class="container">
-						<ul class="top-nav__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="/" itemprop="url">Главная</a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Услуги  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Подбор септика   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Акции </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> О компании  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Доставка и оплата </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Клиентам  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Наши работы   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Контакты </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- end top-nav-->
-			</header>
-			<!-- end HEADER.header-->
 			<!-- start header-block-->
 			<div class="header-block" id="header-block">
 				<div class="container">
-					<h1>header-block</h1>
-					<div class="row"></div>
+					<div class="header-block__logo"><img class="res-i" src="img/@1x/logo-head.png" alt=""/>
+					</div>
+					<h1>Елки оптом</h1><img class="res-i" src="img/@1x/text-price.png" alt=""/>
+					<p>Без наших красавиц не обходится ни один новый год!</p>
+					<div class="header-block__icons-block">
+					</div>
+					<div class="row">
+						<div class="header-block__col col-lg-auto col-6"><img class="res-i" src="img/@1x/head-i-1.png" alt=""/>
+							<div class="header-block__title">Лучшая цена
+							</div>
+							<div class="header-block__text">по рынку в Москве
+							</div>
+						</div>
+						<div class="header-block__col col-lg-auto col-6"><img class="res-i" src="img/@1x/head-i-2.png" alt=""/>
+							<div class="header-block__title">Всегда
+							</div>
+							<div class="header-block__text">на складе в наличии
+							</div>
+						</div>
+						<div class="header-block__col col-lg-auto col-6"><img class="res-i" src="img/@1x/head-i-3.png" alt=""/>
+							<div class="header-block__title">100% контроль
+							</div>
+							<div class="header-block__text">качества вручную
+							</div>
+						</div>
+						<div class="header-block__col col-lg-auto col-6"><img class="res-i" src="img/@1x/head-i-4.png" alt=""/>
+							<div class="header-block__title">Работаем
+							</div>
+							<div class="header-block__text">с 1996 г.
+							</div>
+						</div>
+						<div class="header-block__col-center col">
+							<div class="form-wrap">
+								<form>
+									<input type="hidden" name="example-input-field"/>
+									<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+									<input class="utm_source" type="hidden" name="utm_source"/>
+									<input class="utm_term" type="hidden" name="utm_term"/>
+									<input class="utm_medium" type="hidden" name="utm_medium"/>
+									<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<button class="btn-primary" type="submit">Получить прайс</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="header-block__text-foot">Мы&nbsp;самостоятельно выращиваем деревья: не&nbsp;рубим лесную елку.<br/>Наши деревья растут в&nbsp;питомнике, где им&nbsp;достаточно места и&nbsp;света для идеального роста.
+					</div>
+					<div class="video-block"><iframe width="560" height="315" src="https://www.youtube.com/embed/H8yV1qxqgiU"   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 				</div>
 			</div>
 			<!-- end header-block-->
-			<!-- start s-form-->
-			<div class="s-form section block-with-lazy" id="s-form">
+			<!-- start s-production-->
+			<section class="s-production section text-center" id="s-production">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>s-form</h2>
+					<div class="section-title">
+						<h2>Наше производство</h2>
+					</div><img class="res-i lazy" src="#" data-src="img/@1x/production-img.png" alt=""/>
+					<p>Мы&nbsp;состоим в&nbsp;ассоциации &laquo;Original Nordmann&raquo;. Собственный питомник в&nbsp;Дании размером 50&nbsp;Га. Более 150.000 идеальных деревьев</p>
+					<div class="row">
+								<div class="s-production__col col-xxl-auto col-lg col-md-6">
+									<div class="s-production__item"><img class="res-i" src="img/@1x/production-i-1.png" alt=""/>
+										<div class="s-production__text">100% контроль качества отбора вручную
+										</div>
+									</div>
+								</div>
+								<div class="s-production__col col-xxl-auto col-lg col-md-6">
+									<div class="s-production__item"><img class="res-i" src="img/@1x/production-i-2.png" alt=""/>
+										<div class="s-production__text">География поставок: Россия  Англия, Франция, Норвегия, Италия и многие другие
+										</div>
+									</div>
+								</div>
+								<div class="s-production__col col-xxl-auto col-lg col-md-6">
+									<div class="s-production__item"><img class="res-i" src="img/@1x/production-i-3.png" alt=""/>
+										<div class="s-production__text">Хвойные деревья на любой вкус: от малютки до городской елки
+										</div>
+									</div>
+								</div>
 					</div>
-					<div class="row"></div>
 				</div>
-			</div>
-			<!-- end s-form-->
-			<!-- start s-contact-->
-			<div class="s-contact section block-with-lazy" id="s-contact">
+			</section>
+			<!-- end s-production-->
+			<!-- start s-store-->
+			<section class="s-store section" id="s-store">
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>s-contact</h2>
+						<h2>Наш склад</h2>
+						<p>Посмотрите, как вырос наш склад за&nbsp;3&nbsp;прошедшие года<br/>Больше склад&nbsp;&mdash; больше елок для наших клиентов</p>
 					</div>
-					<div class="row"></div>
+					<div class="row">
+								<div class="s-store__col col-lg-4 col-md-6">
+									<div class="s-store__item">
+										<div class="s-store__img-wrap">
+											<div class="s-store__val">2000м²
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/store-1.png" alt=""/>
+										</div>
+										<div class="s-store__date">2016
+										</div>
+										<p>Наш склад три года назад.<br/>Помните свою новогоднюю елку три года назад? Возможно, она где-то на этих фото.</p>
+										<p>Площадь всего 2000 м2<br/>Кол-во сотрудников: 3</p>
+									</div>
+								</div>
+								<div class="s-store__col col-lg-4 col-md-6">
+									<div class="s-store__item">
+										<div class="s-store__img-wrap">
+											<div class="s-store__val">3500м²
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/store-2.png" alt=""/>
+										</div>
+										<div class="s-store__date">2017
+										</div>
+										<p>Компания росла, вместе с ней рос и склад. В этом году у нас был уже собственный питомник.</p>
+										<p>Площадь уже 3500 м2<br/>Кол-во сотрудников: 5</p>
+									</div>
+								</div>
+								<div class="s-store__col col-lg-4 col-md-6">
+									<div class="s-store__item">
+										<div class="s-store__img-wrap">
+											<div class="s-store__val">4500м²
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/store-3.png" alt=""/>
+										</div>
+										<div class="s-store__date">2018
+										</div>
+										<p>Еще один год, еще один сезон и&nbsp;еще один скачок в&nbsp;развитии. Мы&nbsp;вступили в&nbsp;ассоциацию &laquo;Original Nordmann&raquo;.</p>
+										<p>Площадь достигла 4500 м2<br/>Кол-во сотрудников: 12</p>
+										<p>Страны поставки:<br/>Дания, Россия, Норвегия, и&nbsp;др.</p>
+									</div>
+								</div>
+					</div>
+					<div class="s-store__footer-text">
+						<p>Мы&nbsp;вспоминаем прошедшие сезоны, чтобы вы&nbsp;оценили, как вырос наш ассортимент и&nbsp;уровень клиентского сервиса. Приезжайте, свежие елки на&nbsp;большом и&nbsp;удобном складе ждут Вас. Московская область, Ленинский район, деревня Калиновка</p>
+					</div>
+				</div>
+			</section>
+			<!-- end s-store-->
+			<!-- start s-catalog-->
+			<section class="s-catalog section text-center" id="s-catalog">
+				<div class="container">
+					<div class="section-title">
+						<h2>Хвойные деревья на любой вкус</h2>
+						<p>от малютки до городской елки</p>
+					</div>
+					<div class="row">
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель Датская
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-1.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Пихта Фрейзера
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-2.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель Русская
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-3.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Сосна
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-4.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель голубая в горшке
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-5.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель Русская в горшке
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-6.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Канадская сосна
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-7.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель датская в горшке
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-8.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель норвежская
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-9.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Пихта Фразера в горшке
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-10.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+								<div class="s-catalog__col col-lg-4 col-sm-6">
+									<div class="s-catalog__item"> 
+										<div class="s-catalog__img-wrap">
+											<div class="s-catalog__title">Ель голубая срезанная
+											</div><img class="res-i lazy" src="#" data-src="img/@1x/prod-11.png" alt=""/>
+										</div>
+										<p>Узнайте о ценах по телефону:<br/><a href="tel:8(495)740-83-71">8 (495) 740-83-71</a><br/><a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>или оставьте заявку </p><a class="btn-primary" href="#"> УЗНАТЬ ЦЕНУ</a>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-4.col-sm-6-->
+					</div>
+				</div>
+			</section>
+			<!-- end s-catalog-->
+			<!-- start s-podstavka-->
+			<section class="s-podstavka section text-center" id="s-podstavka">
+				<div class="container">
+					<div class="section-title">
+						<h2>Подставки</h2>
+						<p>Мы&nbsp;предоставляем широкий выбор подставок под новогодние деревья для Ваших клиентов:</p>
+					</div>
+					<div class="row">
+								<div class="s-podstavka__col col-lg-3 col-sm-6">
+									<div class="s-podstavka__item"> 
+										<div class="s-podstavka__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/podstavka-1.png" alt=""/>
+										</div>
+										<div class="s-podstavka__title">Питер Малая
+										</div>
+										<div class="s-podstavka__text">Внутренний диаметр: 10 см<br/>Внешний диаметр: 35 см<br/>Вес: 1.3 кг
+										</div>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-3.col-sm-6-->
+								<div class="s-podstavka__col col-lg-3 col-sm-6">
+									<div class="s-podstavka__item"> 
+										<div class="s-podstavka__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/podstavka-2.png" alt=""/>
+										</div>
+										<div class="s-podstavka__title">Питер Большая
+										</div>
+										<div class="s-podstavka__text">Внутренний диаметр: 26 см<br/>Внешний диаметр: 39 см<br/>Вес: 2.7 кг
+										</div>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-3.col-sm-6-->
+								<div class="s-podstavka__col col-lg-3 col-sm-6">
+									<div class="s-podstavka__item"> 
+										<div class="s-podstavka__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/podstavka-3.png" alt=""/>
+										</div>
+										<div class="s-podstavka__title">&quot;Krinner&quot;
+										</div>
+										<div class="s-podstavka__text">Внутренний диаметр: 11 см<br/>Внешний диаметр: 36 см<br/>Вес: 4 кг
+										</div>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-3.col-sm-6-->
+								<div class="s-podstavka__col col-lg-3 col-sm-6">
+									<div class="s-podstavka__item"> 
+										<div class="s-podstavka__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/podstavka-4.png" alt=""/>
+										</div>
+										<div class="s-podstavka__title">Космос
+										</div>
+										<div class="s-podstavka__text">Внутренний диаметр: 28 см<br/>Внешний диаметр: 50 см<br/>Вес: 2 кг
+										</div>
+									</div>
+								</div>
+								<!-- /+e.col.col-lg-3.col-sm-6-->
+					</div>
+				</div>
+			</section>
+			<!-- end s-podstavka-->
+			<!-- start s-tonnel-->
+			<section class="s-tonnel section" id="s-tonnel">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Тоннели</h2>
+						<p>Для удобного хранения и упаковки</p>
+					</div>
+					<div class="row">
+								<div class="s-tonnel__col col-lg-6">
+									<div class="s-tonnel__item">
+										<div class="row">
+											<div class="col-sm-auto"><img class="res-i lazy" src="#" data-src="img/@1x/tonnel-1.png" alt=""/></div>
+											<div class="col">
+												<div class="s-tonnel__title">Тоннель &quot;Датский d45&quot;
+												</div>
+												<ul>
+													<li>Труба из оцинкованного металла, разбирается на две части для удобства натягивания сетки. </li>
+													<li>Станина из круглой трубы, окрашена, разбирается на три части.</li>
+													<li>Резиновое кольцо.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-tonnel__col col-lg-6">
+									<div class="s-tonnel__item">
+										<div class="row">
+											<div class="col-sm-auto"><img class="res-i lazy" src="#" data-src="img/@1x/tonnel-2.png" alt=""/></div>
+											<div class="col">
+												<div class="s-tonnel__title">Вязанная сетка-рукав d450 мм
+												</div>
+												<ul>
+													<li>Специальная сетка-рукав для упаковки елок диаметром 35,45 см и 55 см, производится в Германии.</li>
+													<li>Особенностью этой сетки является повышенная прочность и простота в обращении. </li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+					</div>
+					<div class="s-tonnel__foot">
+						 Получите <strong>БЕСПЛАТНО </strong> полный прайс-лист на&nbsp;всю продукцию с&nbsp;оптовыми ценами
+					</div>
+					<div class="form-wrap">
+						<form>
+							<input type="hidden" name="example-input-field"/>
+							<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+							<input class="utm_source" type="hidden" name="utm_source"/>
+							<input class="utm_term" type="hidden" name="utm_term"/>
+							<input class="utm_medium" type="hidden" name="utm_medium"/>
+							<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-sm-6">
+									<button class="btn-primary btn-block" type="submit">Получить прайс</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- end s-tonnel-->
+			<!-- start s-about-->
+			<section class="s-about section" id="s-about">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>О нас пишут</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-6"><img class="res-i lazy" src="#" data-src="img/@1x/about.png" alt=""/></div>
+						<div class="col-lg-6">
+							<p>&laquo;ВМ&raquo; открывает отсчет дней, оставшихся до&nbsp;Нового года. Старт оптовым продажам сосен и&nbsp;елей уже дан. Разбираемся, кто, откуда и по&nbsp;какой цене поставляет елки в&nbsp;столицу.</p>
+							<p>На&nbsp;ярмарках и&nbsp;в&nbsp;торговых центрах новогодние деревья появятся недели через три: официально розничная продажа елок обычно начинается 15-20&nbsp;декабря. <br/>Однако оптовики, зарабатывающие на&nbsp;поставках в&nbsp;Москву средних и крупных партий, уже активизировались. Более того, некоторые начали закупаться товаром еще в&nbsp;сентябре&quot;...</p><a class="btn-outline-primary" href="#">ЧИТАТЬ ДАЛЕЕ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-about-->
+			<!-- start s-warning-->
+			<section class="s-warning section" id="s-warning">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Внимание!</h2>
+						<p>С 01.12.19 будет произведена переиндексация цен с соответствующим сезонным подорожанием.</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-5 text-center">
+							<div class="s-warning__block">
+								<p>При оформлении<br/>заказа до 30.11.19, Вы гарантировано получаете эксклюзивную цену на</p>
+								<p><strong>-10%</strong></p>
+								<p>ниже рыночной!</p>
+							</div><a class="btn-primary" href="#">Получить прайс</a>
+						</div>
+						<div class="s-warning__right-block col">
+							<p>Новогодний бизнес – это всегда сверхприбыль! При оформлении заказа Вы получаете эксклюзивное краткое руководство по увеличению розничных продаж! </p>
+							<div class="s-warning__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/warning-img.png" alt=""/>
+								<div class="small-text">*Расчет произведен на основе среднестатистической цены на аналогичную продукцию продаваемую оптом из утвержденного списка конкурентов по Москве и МО.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-warning-->
+			<!-- start s-opt-->
+			<section class="s-opt section text-center" id="s-opt">
+				<div class="container">
+					<div class="section-title">
+						<h2>«Елки оптом» это:</h2>
+					</div>
+					<div class="row">
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-1.png" alt=""/>
+										</div>
+										<p>Лучшая оптовая цена от производителя начиная с&nbsp;1996&nbsp;г.: Мы&nbsp;производитель и предлагаем лучшие оптовые цены по&nbsp;Москве и&nbsp;МО.</p>
+									</div>
+								</div>
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-2.png" alt=""/>
+										</div>
+										<p>Большой ассортимент продукции: Не&nbsp;нужно ходить и&nbsp;сравнивать,  одном месте&nbsp;Вы найдете все необходимые размеры в&nbsp;нужном количестве.</p>
+									</div>
+								</div>
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-3.png" alt=""/>
+										</div>
+										<p>Гарантия качества&nbsp;&mdash; отбор каждого дерева вручную + сертификат качества Наши внимательные технологи отсортировывают только лучшие деревья.</p>
+									</div>
+								</div>
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-4.png" alt=""/>
+										</div>
+										<p>Доставка в&nbsp;любую точку в&nbsp;любом объеме: Доставка по&nbsp;Москве и Московской области.</p>
+									</div>
+								</div>
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-5.png" alt=""/>
+										</div>
+										<p>Собственный большой склад: Всегда все позиции в&nbsp;наличии, предлагаем возможность дозаказа по&nbsp;сезонному спросу.</p>
+									</div>
+								</div>
+								<div class="s-opt__col col-lg-4 col-sm-6">
+									<div class="s-opt__item"> 
+										<div class="s-opt__img-wrap"><img class="res-i lazy" src="#" data-src="img/@1x/opt-6.png" alt=""/>
+										</div>
+										<p>Мы&nbsp;работаем&nbsp;c: Розничными сетями, оптовыми организациями, начинающими предпринимателями,  юр.&nbsp;и&nbsp;физ. лицами.</p>
+									</div>
+								</div>
+					</div>
+					<div class="s-opt__foot">
+						Наша горячая линия для оптовиков: <a href="tel:8(495)740-83-71">8 (495) 740-83-71</a>&nbsp;/ 
+						 <a href="tel:8(925)154-55-43">8 (925) 154-55-43</a><br/>Позвоните прямо сейчас! Ответим СРАЗУ на&nbsp;любые вопросы!
+					</div>
+				</div>
+			</section>
+			<!-- end s-opt-->
+			<!-- start s-order-->
+			<section class="s-order section text-center" id="s-order">
+				<div class="container">
+					<div class="section-title">
+						<h2>Оформить заказ просто</h2>
+					</div><img class="res-i lazy" src="#" data-src="img/@1x/order-img.png" alt=""/>
+					<div class="row">
+						<div class="s-order__col col-lg-4">
+							<div class="s-order__item">Вы&nbsp;звоните&nbsp;<a href="tel:8(926)374-38-32">8 (926) 374-38-32 </a> 
+								или оставляете заявку и&nbsp;мы перезвоним
+							</div>
+						</div>
+						<div class="s-order__col col-lg-4">
+							<div class="s-order__item">Высылаем прайс, договор, счет. При необходимости можно лично выбрать товар на складе.
+							</div>
+						</div>
+						<div class="s-order__col col-lg-4">
+							<div class="s-order__item">Оплачиваете товар и&nbsp;забираете его на&nbsp;нашем складе.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-order-->
+			<!-- start s-rew-->
+			<section class="s-rew section text-center" id="s-rew">
+				<div class="container">
+					<div class="section-title">
+						<h2>Нам доверяют</h2>
+					</div>
+					<div class="row">
+								<div class="s-rew__col col-xl-4 col-md-6">
+									<div class="s-rew__item"><img class="res-i lazy" src="#" data-src="img/@1x/rew-1.png" alt=""/>
+										<p> Тихомирова Анастасия<br/>директор магазина</p>
+										<p>Работаем с компанией «Елочки» не первый год, цены действительно самые низкие, товар очень хорошего качества, разлетается быстро. Eсли требуется дозакупка, привозят в день заявки. Если вы действительно хотите заработать приличные деньги на Новый год, то с этими ребятами, точно не прогадаете. Всем рекомендую.</p>
+									</div>
+								</div>
+								<div class="s-rew__col col-xl-4 col-md-6">
+									<div class="s-rew__item"><img class="res-i lazy" src="#" data-src="img/@1x/rew-2.png" alt=""/>
+										<p> Усманов Анатолий<br/>предприниматель</p>
+										<p>У меня немного другая сфера деятельности, но кто откажется подзаработать на Новый год. Решил попробовать и не ошибся. Елки, оказались отличного качества, поэтому раскупили быстро. Брака не было. Хочется отметить работу менеджера, которая посоветовала какие елки брать и в каком количестве, чтобы не прогореть.</p>
+									</div>
+								</div>
+								<div class="s-rew__col col-xl-4 col-md-6">
+									<div class="s-rew__item"><img class="res-i lazy" src="#" data-src="img/@1x/rew-3.png" alt=""/>
+										<p> Серебрякова Алина<br/>секретарь</p>
+										<p>Каждый Новый год думаю «Что дарить партнерам и сотрудникам?» Случайно увидела рекламу о продаже елок в горшках и подумала, а чем не подарок. Боялась только что качество будет не очень. Оказалось зря. Все елочки как с картинки. Цены гораздо дешевле, чем в магазинах. Привезли в назначенное время, без опозданий.</p>
+									</div>
+								</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-rew-->
+			<!-- start s-contact-->
+			<div class="s-contact block-with-lazy" id="s-contact">
+				<!-- start s-sert-->
+				<section class="s-sert section text-center" id="s-sert">
+					<div class="container">
+						<div class="section-title">
+							<h2>Сертификаты</h2>
+						</div>
+						<div class="row">
+									<div class="s-sert__col col-md-3 col-6"><a class="s-sert__item" href="img/@1x/sert-1.jpg" data-fancybox="gal"><img class="res-i lazy" src="#" data-src="img/@1x/sert-1.jpg" alt=""/></a>
+									</div>
+									<div class="s-sert__col col-md-3 col-6"><a class="s-sert__item" href="img/@1x/sert-2.jpg" data-fancybox="gal"><img class="res-i lazy" src="#" data-src="img/@1x/sert-2.jpg" alt=""/></a>
+									</div>
+									<div class="s-sert__col col-md-3 col-6"><a class="s-sert__item" href="img/@1x/sert-3.jpg" data-fancybox="gal"><img class="res-i lazy" src="#" data-src="img/@1x/sert-3.jpg" alt=""/></a>
+									</div>
+									<div class="s-sert__col col-md-3 col-6"><a class="s-sert__item" href="img/@1x/sert-4.jpg" data-fancybox="gal"><img class="res-i lazy" src="#" data-src="img/@1x/sert-4.jpg" alt=""/></a>
+									</div>
+						</div>
+						<p>Московская область, Ленинский район, деревня Калиновка</p>
+					</div>
+				</section>
+				<!-- end s-sert-->
+				<div class="section text-center">
+					<div class="container"> 
+						<div class="s-contact__map-wrap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2821c5dbf45bf2ddff53b28c36b254935fba72ac6411b2fd4b5ed51080748e97&amp;width=500&amp;height=252&amp;lang=ru_RU&amp;scroll=no"></script>
+						</div>
+						<div class="s-contact__logo"><img class="res-i lazy" src="#" data-src="img/@1x/logo-foot.png" alt=""/>
+						</div>
+						<div class="s-contact__foot">
+							<p>ИП Кузнецов А.В.<br/>ИНН 500307092830  ОГРН 312500317400050<br/>Московская область, Ленинский район, деревня Калиновка<br/> <a class="text-body" href="tel:8(495)740-83-71">8 (495) 740-83-71 </a>/ 
+								<a class="text-body" href="tel:8(925)154-55-43">8 (925) 154-55-43</a>
+							</p><a class="btn-primary" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- end s-contact-->
-			<footer class="footer block-with-lazy">
-				<div class="container">
-					<h2>footer</h2>
-				</div>
-			</footer>
 		</div>
 		<div class="d-none">
 			<div class="form-wrap modal-win modal-form" id="modal-call">

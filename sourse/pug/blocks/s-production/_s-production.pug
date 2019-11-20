@@ -1,0 +1,18 @@
+mixin s-production()
+	// start s-production
+	+b.SECTION.s-production.section.text-center#s-production&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наше производство
+			img.res-i.lazy(src="#" data-src="img/@1x/production-img.png", alt="")
+			p Мы&nbsp;состоим в&nbsp;ассоциации &laquo;Original Nordmann&raquo;. Собственный питомник в&nbsp;Дании размером 50&nbsp;Га. Более 150.000 идеальных деревьев
+			.row
+				mixin item(i,p)
+					+e.col.col-xxl-auto.col-lg.col-md-6
+						+e.item
+							img.res-i(src=`img/@1x/production-i-${i}.png`, alt="") 
+							+e.text= p
+				+item('1','100% контроль качества отбора вручную')
+				+item('2','География поставок: Россия  Англия, Франция, Норвегия, Италия и многие другие')
+				+item('3','Хвойные деревья на любой вкус: от малютки до городской елки')
+	// end s-production

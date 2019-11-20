@@ -1,0 +1,5 @@
+JSCCommons-store();
+	s-store() {
+
+	}
+	

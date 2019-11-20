@@ -1,0 +1,18 @@
+mixin s-sert()
+	// start s-sert
+	+b.SECTION.s-sert.section.text-center#s-sert&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Сертификаты
+				
+			.row
+				mixin item(i)
+					+e.col.col-md-3.col-6
+						+e.item(href=`img/@1x/sert-${i}.jpg` data-fancybox="gal")
+							img.res-i.lazy(src="#" data-src=`img/@1x/sert-${i}.jpg`, alt="")  
+				+item("1")
+				+item("2")
+				+item("3")
+				+item("4")
+			p Московская область, Ленинский район, деревня Калиновка
+	// end s-sert

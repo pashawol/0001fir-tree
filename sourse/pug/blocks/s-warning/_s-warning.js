@@ -1,0 +1,5 @@
+JSCCommons-warning();
+	s-warning() {
+
+	}
+	

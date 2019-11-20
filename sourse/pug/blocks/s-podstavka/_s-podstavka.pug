@@ -1,0 +1,41 @@
+mixin s-podstavka()
+	// start s-podstavka
+	+b.SECTION.s-podstavka.section.text-center#s-podstavka&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Подставки
+				p Мы&nbsp;предоставляем широкий выбор подставок под новогодние деревья для Ваших клиентов:
+			.row
+				mixin item(i,t,p)
+					+e.col.col-lg-3.col-sm-6
+						+e.item 
+							+e.img-wrap
+								img.res-i.lazy(src="#" data-src=`img/@1x/podstavka-${i}.png`, alt="") 
+							+e.title= t
+							block
+					// /+e.col.col-lg-3.col-sm-6
+				+item("1",'Питер Малая')
+					+e.text Внутренний диаметр: 10 см
+						br
+						| Внешний диаметр: 35 см
+						br
+						| Вес: 1.3 кг
+				+item("2",'Питер Большая')
+					+e.text Внутренний диаметр: 26 см
+						br
+						| Внешний диаметр: 39 см
+						br
+						| Вес: 2.7 кг
+				+item("3",'"Krinner"')
+					+e.text Внутренний диаметр: 11 см
+						br
+						| Внешний диаметр: 36 см
+						br
+						| Вес: 4 кг
+				+item("4",'Космос')
+					+e.text Внутренний диаметр: 28 см
+						br
+						| Внешний диаметр: 50 см
+						br
+						| Вес: 2 кг
+	// end s-podstavka

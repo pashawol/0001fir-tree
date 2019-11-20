@@ -1,9 +1,25 @@
 mixin s-contact()
 	// start s-contact
-	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 s-contact
-				
-			.row
+	+b.s-contact.block-with-lazy#s-contact&attributes(attributes)
+		block
+		.section.text-center
+			.container 
+				+e.map-wrap
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2821c5dbf45bf2ddff53b28c36b254935fba72ac6411b2fd4b5ed51080748e97&amp;width=500&amp;height=252&amp;lang=ru_RU&amp;scroll=no"></script>
+				+e.logo
+					img.res-i.lazy(src="#" data-src="img/@1x/logo-foot.png", alt="")
+			 
+				+e.foot
+					p ИП Кузнецов А.В.
+						br
+						| ИНН 500307092830  ОГРН 312500317400050
+						br
+						| Московская область, Ленинский район, деревня Калиновка
+						br
+						| 
+						a.text-body(href="tel:8(495)740-83-71") 8 (495) 740-83-71 
+						| / 
+						|
+						a.text-body(href="tel:8(925)154-55-43") 8 (925) 154-55-43
+					a.btn-primary(href="#") ЗАКАЗАТЬ ЗВОНОК
 	// end s-contact

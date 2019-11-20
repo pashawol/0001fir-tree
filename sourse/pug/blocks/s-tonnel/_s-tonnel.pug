@@ -1,0 +1,37 @@
+mixin s-tonnel()
+	// start s-tonnel
+	+b.SECTION.s-tonnel.section#s-tonnel&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Тоннели
+				p Для удобного хранения и упаковки
+			.row
+				mixin item(i, t)
+					+e.col.col-lg-6
+						+e.item
+							.row
+								.col-sm-auto
+									img.res-i.lazy(src="#" data-src=`img/@1x/tonnel-${i}.png`, alt="") 
+								.col
+									+e.title= t
+									block
+				+item('1','Тоннель "Датский d45"')
+					ul
+						li Труба из оцинкованного металла, разбирается на две части для удобства натягивания сетки. 
+						li Станина из круглой трубы, окрашена, разбирается на три части.
+						li Резиновое кольцо.
+				+item('2','Вязанная сетка-рукав d450 мм')
+					ul
+						li Специальная сетка-рукав для упаковки елок диаметром 35,45 см и 55 см, производится в Германии.
+						li Особенностью этой сетки является повышенная прочность и простота в обращении. 
+			+e.foot  Получите 
+				|
+				strong БЕСПЛАТНО 
+				|  полный прайс-лист на&nbsp;всю продукцию с&nbsp;оптовыми ценами
+			+form-wrap
+				.row
+					.col-sm-6
+						+input('','tel')
+					.col-sm-6
+						button.btn-primary.btn-block(type="submit") Получить прайс
+	// end s-tonnel

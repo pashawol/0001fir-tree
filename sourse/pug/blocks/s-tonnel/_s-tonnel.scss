@@ -1,0 +1,64 @@
+.s-tonnel {
+	background-image: url(../img/@1x/tonnel-bg.jpg);
+	background-position: bottom center;
+	line-height:1 ;
+	&__title{
+		margin-bottom: 0.5rem;
+		color: #000000;
+	}
+	ul{
+		padding-left: rem(20);
+	}
+	&__item{
+		margin-bottom: rem(50);
+	}
+	&__foot{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		max-width: 500px;
+		margin-bottom: rem(40);
+		strong{
+			color: #006838;
+		}
+	}
+	.form-wrap{
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(lg) {
+
+			max-width: rem(1000 / 2);
+		}
+		// margin-bottom: rem(40);
+	}
+	.col-sm-auto{
+		text-align: center;
+		margin-bottom: rem(30);
+	}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

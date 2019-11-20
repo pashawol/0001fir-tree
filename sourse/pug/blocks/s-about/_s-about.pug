@@ -1,0 +1,19 @@
+mixin s-about()
+	// start s-about
+	+b.SECTION.s-about.section#s-about&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 О нас пишут
+				
+			.row
+				.col-lg-6
+					img.res-i.lazy(src="#" data-src="img/@1x/about.png", alt="")
+				.col-lg-6
+					p &laquo;ВМ&raquo; открывает отсчет дней, оставшихся до&nbsp;Нового года. Старт оптовым продажам сосен и&nbsp;елей уже дан. Разбираемся, кто, откуда и по&nbsp;какой цене поставляет елки в&nbsp;столицу.
+
+
+					p На&nbsp;ярмарках и&nbsp;в&nbsp;торговых центрах новогодние деревья появятся недели через три: официально розничная продажа елок обычно начинается 15-20&nbsp;декабря. 
+						br
+						| Однако оптовики, зарабатывающие на&nbsp;поставках в&nbsp;Москву средних и крупных партий, уже активизировались. Более того, некоторые начали закупаться товаром еще в&nbsp;сентябре&quot;...
+					a.btn-outline-primary(href="#") ЧИТАТЬ ДАЛЕЕ
+	// end s-about
