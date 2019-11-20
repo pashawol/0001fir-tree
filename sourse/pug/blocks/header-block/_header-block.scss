@@ -74,7 +74,10 @@
 		line-height: 1;
 	}
 	.form-wrap{
-		width: rem(232px);
+		@include media-breakpoint-up(md) {
+
+			width: rem(242px);
+		}
 		margin-left: auto;
 		margin-right: auto;
 	}
