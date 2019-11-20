@@ -14,6 +14,9 @@
 			border-bottom-left-radius:  #{50%}   #{ rem(90px)};
 			top: 0;
 		}
+		p.strong{
+			margin-bottom: 0.5rem;
+		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

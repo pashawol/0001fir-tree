@@ -83,12 +83,14 @@
 	}
 	.btn-primary{
 		width: 100%;
+		box-shadow: 0 10px 45px rgba(178,34,103,.6);
+
 	}
 
 	&__text-foot{
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 700px;
+		max-width: rem(750px);
 	}
 	margin-bottom: rem(60px);
 	// 

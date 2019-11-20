@@ -5,7 +5,11 @@ $addr: '../fonts/';
 $file-format: woff2;
 
 @include font-face ($default-font, $addr + "FuturisCyrillic", $file-formats: $file-format);
+@include font-face ("Open Sans Light", $addr + "OpenSansLight-Italic", $file-formats: $file-format);
+@include font-face ($default-font, $addr + "FuturisC", bold, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "FuturisXC", 800, $file-formats: $file-format);
 @include font-face ("Rupster Script Free", $addr + "RupsterScriptFree",   $file-formats: $file-format);
+@include font-face ("Roboto Condensed", $addr + "RobotoCondensed-Regular",   $file-formats: $file-format);
 
 
 // font-weight helper:

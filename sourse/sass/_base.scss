@@ -38,6 +38,7 @@ html {
 		@include rfs(rem(83 /2));
 		font-weight: 400;
 		line-height: 1.87;
+		margin-bottom: 0;
 		
 		@include media-breakpoint-up(md) {}
 	}

@@ -20,6 +20,8 @@
 		 }
 		 &__title{
 			 margin-bottom: rem(18);
+			 font-weight: bold;
+			 color: #000000;
 		 }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
