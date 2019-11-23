@@ -11,6 +11,14 @@ mixin allcjs()
 	//- link(rel="stylesheet", href="fonts/fontello/css/fontello.css")
 	script(src="js/lazy.js")
 	script(src="libs/jquery/jquery.min.js")
+	script#bx24_form_button(data-skip-moving='true').
+		(function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+		(w[b].forms=w[b].forms||[]).push(arguments[0])};
+		if(w[b]['forms']) return;
+		var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+		})(window,document,'https://kvid.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+		b24form({"id":"13","lang":"ru","sec":"kxhyku","type":"button","click":""});
 	// полифил для picture
 	script(src="libs/picturefill/picturefill.min.js")
 	// полифил для object-fit
@@ -27,6 +35,8 @@ mixin allcjs()
 	// /for svg libs
 	script(src="libs/inputmask/jquery.inputmask.bundle.js")
 	script(src="js/common.js")
+
+
 	//- cut text libs
 	//- script(src="libs/jquery.morelines.min.js") 
 	

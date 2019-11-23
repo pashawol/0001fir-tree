@@ -465,3 +465,9 @@ a{
 	text-transform: uppercase;
 	font-size: rem(22);
 }
+
+[data-bx-form-popup-close]{
+	svg{
+		margin-top: -15px;
+	}
+}
