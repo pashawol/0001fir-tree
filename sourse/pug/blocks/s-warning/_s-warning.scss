@@ -1,7 +1,7 @@
 .s-warning {
 	background-image: url(../img/@1x/warning-bg-main.jpg);
 	background-position:  top  left;
-	padding-top: rem(180);
+	padding-top: rem(120);
 	position: relative;
 	padding-bottom: 0;
 	img{
@@ -17,6 +17,10 @@
 		border-bottom-right-radius:  #{50%}   #{ rem(100px)};
 		border-bottom-left-radius:  #{50%}   #{ rem(100px)};
 		top: 0;
+	}
+
+p{
+		line-height: 1.2;
 	}
 	.section-title{
 		p{
