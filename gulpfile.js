@@ -12,6 +12,7 @@ global.$ = {
 	tabify: require('gulp-tabify'),
 	envDev: false,
 	gp: require('gulp-load-plugins' )(),
+	gcmq: require('gulp-group-css-media-queries'),
 	browserSync: require('browser-sync').create(), 
 	path: {
 		tasks: require('./gulp/config/tasks.js'),

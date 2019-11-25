@@ -26,8 +26,8 @@
 		line-height: 1.44;
 		@include media-breakpoint-up(xl) {
 
-			margin-bottom: rem(440);
 		}
+		margin-bottom: rem(440);
 		// margin-bottom: rem(320);
 	}
 	&__col{

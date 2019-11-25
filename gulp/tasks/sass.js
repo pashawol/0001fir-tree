@@ -5,7 +5,7 @@ module.exports = function (){
 	.pipe($.gp.sass().on("error", $.gp.notify.onError()))
 	
 	//.pipe(gulpif(envDev, sourcemaps.write({includeContent: false, sourceRoot: '/public'})))
-	.pipe($.gulpif(!$.envDev, $.gp.combineMq()))
+	.pipe($.gcmq())
 	.pipe($.gp.rename({suffix: '.min', prefix : ''}))
 	.pipe($.gp.autoprefixer({
 
