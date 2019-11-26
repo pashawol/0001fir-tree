@@ -1,11 +1,12 @@
 .s-warning {
-	background-image: url(../img/@1x/warning-bg-main.jpg);
-	background-position:  top  left;
-	padding-top: rem(120);
+	background-image: url(../img/@1x/warning-bg.jpg);
+	background-position:  bottom  center;
+	background-size: cover;
+	padding-top: rem(180);
 	position: relative;
 	padding-bottom: 0;
 	img{
-		opacity: 0;
+		// opacity: 0;
 	}
 	&::before{
 		content: '';
@@ -68,8 +69,8 @@ p{
 		}
 	}
 	&__right-block{
-		// margin-bottom: rem(-80);
-		margin-bottom: 100px;
+		margin-bottom: rem(-180);
+		// margin-bottom: 100px;
 	}
 	margin-bottom: rem(180);
 	.small-text{
@@ -77,8 +78,8 @@ p{
 		font-size: rem(12);
 		@include media-breakpoint-up(lg) {
 
-			margin-left: rem(250px);
-			// margin-top: rem(-150);
+			margin-left: rem(-250px);
+			margin-top: rem(-160);
 		}
 		max-width: rem(300);
 		margin-right: auto;
